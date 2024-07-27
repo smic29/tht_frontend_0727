@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import { useState, useEffect } from 'react';
 import Table from './components/table';
+import Button from './components/button';
 
 function App() {
   const [data, setData] = useState<any[]>(JSON.parse(localStorage.getItem('tasks') || '[]'))
@@ -41,9 +42,19 @@ function App() {
     }
   }, [isLoading])
 
+  const printToConsole = () => {
+    console.log(data)
+    alert("Data printed on console, use inspect to view")
+  }
+
   return (
     <div className="App container mx-auto px-4 py-4">
-      { isLoading ? "Loading Data..." : <Table taskData={data} />}
+      { isLoading ? "Loading Data..." : 
+      <>
+        <Table taskData={data} />
+        <Button text="Console" onClick={printToConsole} />
+      </>
+      }
     </div>
   );
 }
