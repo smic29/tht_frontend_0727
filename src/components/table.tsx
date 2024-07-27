@@ -23,7 +23,7 @@ const Table: React.FC<Props> = ({taskData}) => {
                         {taskData.map((data:any, index:any) => (
                             <tr className='hover:bg-slate-100' key={index}>
                                 {tableHeaders.map((header,index) => (
-                                    <TableData index={index} data={data} header={header}/>
+                                    <TableData index={index} data={data} header={header} key={index + 452}/>
                                 ))}
                             </tr>
                         ))}
