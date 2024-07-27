@@ -2,6 +2,7 @@
   "name": "fc-frontend-task",
   "version": "0.1.0",
   "private": true,
+  "proxy": "https://bored-api.appbrewery.com",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -18,9 +19,16 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+    "@typescript-eslint"
+    ],
     "extends": [
       "react-app",
-      "react-app/jest"
+      "react-app/jest",
+      "eslint:recommended",
+      "plugin:@typescript-eslint/eslint-recommended",
+      "plugin:@typescript-eslint/recommended"
     ]
   },
   "browserslist": {
