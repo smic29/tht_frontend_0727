@@ -52,7 +52,11 @@ function App() {
       { isLoading ? "Loading Data..." : 
       <>
         <Table taskData={data} />
-        <Button text="Console" onClick={printToConsole} />
+        <div className="flex flex-row justify-center">
+          <Button text="JSON" data={data} />
+          <Button text="CSV" data={data} />
+          <Button text="Console" onClick={printToConsole} />
+        </div>
       </>
       }
     </div>
