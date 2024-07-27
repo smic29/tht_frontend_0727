@@ -3,8 +3,8 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      Hello World!
+    <div className="App container mx-auto px-4 py-4">
+      <h1>Hello World!</h1>
     </div>
   );
 }
