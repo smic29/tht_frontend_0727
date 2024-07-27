@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/tht_frontend_0727/static/css/main.f855e6bc.css",
+    "main.js": "/tht_frontend_0727/static/js/main.102a0679.js",
+    "index.html": "/tht_frontend_0727/index.html",
+    "main.f855e6bc.css.map": "/tht_frontend_0727/static/css/main.f855e6bc.css.map",
+    "main.102a0679.js.map": "/tht_frontend_0727/static/js/main.102a0679.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.102a0679.js"
+  ]
+}
