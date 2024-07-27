@@ -19,9 +19,9 @@ const TableData: React.FC<TableDataProps> = ({index, data, header}) => {
 }
 
 const Checkbox: React.FC<CheckboxProps> = ({checked}) => {
-    if (checked) return ( <input type="checkbox" checked disabled />)
+    if (checked) return ( <input type="checkbox" checked disabled name="kidFriendly" />)
     
-    return <input type="checkbox" disabled />
+    return <input type="checkbox" disabled name="kidFriendly" />
 }
 
 export default TableData
